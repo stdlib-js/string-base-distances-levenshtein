@@ -22,49 +22,39 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Calculates the [Levenshtein][levenshtein] (edit) distance between two strings.
+> Calculate the [Levenshtein][levenshtein] (edit) distance between two strings.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string-base-distances-levenshtein
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-levenshteinDistance = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var levenshteinDistance = require( 'path/to/vendor/umd/string-base-distances-levenshtein/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.levenshteinDistance;
-})();
-</script>
+var levenshteinDistance = require( '@stdlib/string-base-distances-levenshtein' );
 ```
 
 #### levenshteinDistance( s1, s2 )
 
-Calculates the [Levenshtein][levenshtein] (edit) distance between two strings. 
-
-The Levenstein (edit) distance is a popular metric for quantifying the difference between two strings. It is used in a variety of applications, including spell checking, natural language processing, and text mining.
+Calculates the [Levenshtein][levenshtein] (edit) distance between two strings.
 
 ```javascript
 var dist = levenshteinDistance( 'frog', 'from' );
@@ -93,43 +83,20 @@ dist = levenshteinDistance( '1638452297', '2311638451' );
 
 ## Examples
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var levenshteinDistance = require( '@stdlib/string-base-distances-levenshtein' );
 
-var str1 = 'algorithm';
-var str2 = 'altruistic';
-var out = levenshteinDistance( str1, str2 );
+var dist = levenshteinDistance( 'algorithm', 'altruistic' );
 // returns 6
 
-str1 = 'elephant';
-str2 = 'hippo';
-out = levenshteinDistance( str1, str2 );
+dist = levenshteinDistance( 'elephant', 'hippo' );
 // returns 7
 
-str1 = 'javascript';
-str2 = 'typescript';
-out = levenshteinDistance( str1, str2 );
+dist = levenshteinDistance( 'javascript', 'typescript' );
 // returns 4
 
-str1 = 'levenshtein';
-str2 = 'leviathan';
-out = levenshteinDistance( str1, str2 );
+dist = levenshteinDistance( 'levenshtein', 'leviathan' );
 // returns 6
-
-str1 = 'sacrifice';
-str2 = 'paradise';
-out = levenshteinDistance( str1, str2 );
-// returns 5
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
