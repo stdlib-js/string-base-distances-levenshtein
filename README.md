@@ -33,7 +33,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import levenshteinDistance from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@esm/index.mjs';
+import levenshteinDistance from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@v0.0.1-esm/index.mjs';
 ```
 
 #### levenshteinDistance( s1, s2 )
@@ -73,7 +73,7 @@ dist = levenshteinDistance( '1638452297', '2311638451' );
 <body>
 <script type="module">
 
-import levenshteinDistance from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@esm/index.mjs';
+import levenshteinDistance from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@v0.0.1-esm/index.mjs';
 
 var dist = levenshteinDistance( 'algorithm', 'altruistic' );
 // returns 6
