@@ -150,8 +150,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/string-base-distances-levenshtein.svg
 [npm-url]: https://npmjs.org/package/@stdlib/string-base-distances-levenshtein
 
-[test-image]: https://github.com/stdlib-js/string-base-distances-levenshtein/actions/workflows/test.yml/badge.svg?branch=v0.0.1
-[test-url]: https://github.com/stdlib-js/string-base-distances-levenshtein/actions/workflows/test.yml?query=branch:v0.0.1
+[test-image]: https://github.com/stdlib-js/string-base-distances-levenshtein/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/string-base-distances-levenshtein/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/string-base-distances-levenshtein/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/string-base-distances-levenshtein?branch=main
