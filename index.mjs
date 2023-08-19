@@ -1,4 +1,0 @@
-// Copyright (c) 2023 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import{isPrimitive as r}from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-fmtprodmsg@v0.0.2-esm/index.mjs";import s from"https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-min@esm/index.mjs";function e(e,n){var i,o,m,l,d,f,h,p;if(!r(e))throw new TypeError(t("null3R",e));if(!r(n))throw new TypeError(t("null3L",n));if(d=e.length,l=n.length,0===d)return l;if(0===l)return d;for(o=[],f=0;f<=l;f++)o.push(f);for(f=0;f<d;f++)for(m=o[0],o[0]=f+1,h=0;h<l;h++)i=o[p=h+1],e[f]===n[h]?o[p]=m:o[p]=s(m,s(o[h],o[p]))+1,m=i;return o[l]}export{e as default};
-//# sourceMappingURL=index.mjs.map
