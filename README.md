@@ -44,7 +44,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import levenshteinDistance from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@deno/mod.js';
+import levenshteinDistance from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@v0.1.0-deno/mod.js';
 ```
 
 #### levenshteinDistance( s1, s2 )
@@ -79,7 +79,7 @@ dist = levenshteinDistance( '1638452297', '2311638451' );
 ## Examples
 
 ```javascript
-import levenshteinDistance from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@deno/mod.js';
+import levenshteinDistance from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@v0.1.0-deno/mod.js';
 
 var dist = levenshteinDistance( 'algorithm', 'altruistic' );
 // returns 6
