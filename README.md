@@ -44,6 +44,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import levenshteinDistance from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-base-distances-levenshtein/tags). For example,
+
+```javascript
 import levenshteinDistance from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@v0.1.0-esm/index.mjs';
 ```
 
@@ -84,7 +89,7 @@ dist = levenshteinDistance( '1638452297', '2311638451' );
 <body>
 <script type="module">
 
-import levenshteinDistance from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@v0.1.0-esm/index.mjs';
+import levenshteinDistance from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-base-distances-levenshtein@esm/index.mjs';
 
 var dist = levenshteinDistance( 'algorithm', 'altruistic' );
 // returns 6
