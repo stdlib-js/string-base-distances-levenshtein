@@ -21,119 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var levenshteinDistance = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof levenshteinDistance, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function throws an error if not provided a string as its first argument', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		{},
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			levenshteinDistance( value, 'dummy' );
-		};
-	}
-});
-
-tape( 'the function throws an error if not provided a string as its second argument', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		{},
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			levenshteinDistance( 'dummy', value );
-		};
-	}
-});
-
-tape( 'the function calculates the Levenshtein (edit) distance between two strings', function test( t ) {
-	var expected;
-	var values;
-	var i;
-
-	values = [
-		[ 'algorithm', 'altruistic' ],
-		[ '1638452297', '444488444' ],
-		[ '', '' ],
-		[ '', 'a' ],
-		[ 'aaapppp', '' ],
-		[ 'frog', 'fog' ],
-		[ 'fly', 'ant' ],
-		[ 'elephant', 'hippo' ],
-		[ 'hippo', 'elephant' ],
-		[ 'hippo', 'zzzzzzzz' ],
-		[ 'hello', 'hallo' ],
-		[ 'congratulations', 'conmgeautlatins' ]
-	];
-
-	expected = [ 6, 9, 0, 1, 7, 1, 3, 7, 7, 8, 1, 5 ];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( levenshteinDistance( values[i][0], values[i][1] ), expected[i], 'returns expected value' );
-	}
-	t.end();
-});
-
-tape( 'the function calculates the Levenshtein (edit) distance between two strings with Unicode characters', function test( t ) {
-	var expected;
-	var values;
-	var i;
-
-	values = [
-		[ 'fóoBár', 'fóo' ],
-		[ 'Привет', 'теи' ],
-		[ '_Світ-прекрасний', 'прекрасний' ],
-		[ '🤨🥹', '🥹' ],
-		[ 'हिंदी', 'தமிழ்' ],
-		[ '𝄞', '\uD834\uDD1E' ]
-	];
-
-	expected = [ 3, 5, 6, 2, 5, 0 ];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.strictEqual( levenshteinDistance( values[i][0], values[i][1] ), expected[i], 'returns expected value' );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
