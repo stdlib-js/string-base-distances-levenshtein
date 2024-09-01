@@ -110,18 +110,6 @@ A total of 1 person contributed to this release. Thank you to this contributor:
 
 <!-- /.features -->
 
-<section class="issues">
-
-### Closed Issues
-
-This release closes the following issue:
-
-[#835 ](https://github.com/stdlib-js/stdlib/issues/835 )
-
-</section>
-
-<!-- /.issues -->
-
 <section class="commits">
 
 ### Commits
